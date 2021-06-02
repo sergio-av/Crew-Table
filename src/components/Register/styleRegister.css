@@ -1,3 +1,11 @@
+label{
+    font-size: larger
+}
+.hrRegister{
+    border-color: #2A1A1F;
+}
+
+
 #body{
     background-image: url(../../img/background.svg);
 
@@ -14,7 +22,7 @@
     height: 100%;
 }
 
-#contentLogin{
+#contentRegister{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,38 +37,46 @@
     background-color: #AD8350;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
 }
-#contentLogin img{
+#contentRegister img{
     margin-top: 39px;
 }
-#contentLogin input{
-    margin-top: 56px;
-    padding-left: 20px;
-        
-    font-size: large;
 
-    width: 50%;
-    height: 60px;
+#titleRegister{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+    width: 720px;
+
+    margin-right: 320px;
+}
+
+.inputsRegister{
+    width: 728px;
+    height: 47px;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    
+}
+#contentRegister input{
     border: none;
-    border-radius: 50px;
     outline: none;
-
-    background-color: #2A1A1F ;
-    color: #AD8350;
-}
-
-#contentLogin input::placeholder{
     font-size: large;
 
-    color: #AD8350;
+
+    color: #2A1A1F;
+    background-color: #AD8350 ;
 }
-#contentLogin button{
+
+#contentRegister button{
     display: flex;
     justify-content: center;
     align-items: center;
 
     margin-right: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 
 
     font-size: large;
@@ -75,4 +91,10 @@
 
     background-color: #2A1A1F;
     color: #AD8350;
+}
+
+#contentRegister p{
+    font-size: large;
+
+    margin-bottom: 35px;
 }
