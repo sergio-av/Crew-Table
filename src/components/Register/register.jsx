@@ -1,7 +1,6 @@
 import React from 'react';
 import './styleRegister.css';
-
-
+import { Link } from 'react-router-dom';
 
 import logoRegister from '../../img/logoRegister.svg'
 
@@ -45,7 +44,7 @@ const Register = () => {
                         </div>
                     </form>
                     <button>Enviar solicitud</button>
-                    <p>¿Ya te unistes?</p>
+                    <Link to="/login" className="enlaceRegister">¿Ya te unistes?</Link>
                 </div>
             </div>
         </div>
