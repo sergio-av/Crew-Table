@@ -8,6 +8,7 @@ import imgArcade from '../../img/imgArcade.svg';
 import imgDd from '../../img/imgDd.svg';
 
 import './styleListEvents.css';
+import Footer from '../common/Footer/Footer';
 
 const ListEvent = () => {
     return (
@@ -32,6 +33,7 @@ const ListEvent = () => {
                 </div>
 
             </div>
+            <Footer/>
 
         </div>
     )

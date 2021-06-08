@@ -1,5 +1,6 @@
 import React from 'react'
 import Topbar from '../common/TopBar/topbar'
+import Footer from '../common/Footer/Footer'
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Topbar/>
             <h1>Home</h1>
+            <Footer/>
         </div>
     )
 }

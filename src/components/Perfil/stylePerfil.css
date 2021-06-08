@@ -1,0 +1,109 @@
+#bodyPerfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#poster{
+    margin-left: 45px;   
+}
+form {
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 567px;
+  height: 390px;
+}
+#formComplete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputs hr {
+  width: 100%;
+  margin-top: 0px;
+}
+.inputPerfil {
+  width: 567px;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+.inputPerfil input {
+  width: 567px;
+  background-color: #afa060;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+.inputPerfil p {
+  font-weight: 500;
+  font-size: large;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+#buttonForm > button {
+  margin-left: 25px;
+  margin-right: 25px;
+
+  font-size: large;
+
+  width: 171px;
+  height: 57px;
+
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  background-color: #2A1A1F;
+  color: #AD8350;
+}
+
+#misEvents {
+  margin-bottom: 25px;
+  margin-right: 100px;
+
+  width: 609px;
+  height: 695px;
+  
+  background-image: url("../../img/textura_papelPerfill.svg");
+  border-radius: 59px;
+  border: 1px solid;
+  border-color: #764134;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#titleMisEvents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#titleE{
+    margin-top: 25px;
+    text-align: center;
+    width: 90%;
+}
+#etiquetasP{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#etiquetasP p{
+    font-size: large;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
