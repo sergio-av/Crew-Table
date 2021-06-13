@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ListGame from '../common/ListGame/ListGame';
 import Poster from '../common/Poster/poster';
 import Topbar from '../common/TopBar/topbar';
@@ -9,31 +9,39 @@ import imgDd from '../../img/imgDd.svg';
 
 import './styleListEvents.css';
 import Footer from '../common/Footer/Footer';
+import { Link } from 'react-router-dom';
 
 const ListEvent = () => {
+
+    const [tipoList, setTipoList] = useState();
+
     return (
         <div>
-            <Topbar/>
+            <Topbar />
 
             <div id="bodyListEvent">
                 <Poster name="Eventos" />
 
                 <div id="buttonAdEvent">
-                    <div id="sombra">
-                        <h2>Publicar evento</h2>
-                    </div>
+                    <Link to="/addEvent">
+                        <div id="sombra">
+                            <h2>Publicar evento</h2>
+                        </div>
+                    </Link>
                 </div>
 
-                <hr className="hrlistEvent"/>
+                <hr className="hrlistEvent" />
 
                 <div id="listsEvents">
-                    <ListGame nameListGame="Duelo De Cartas" imgListGame={imgDuel}/>
-                    <ListGame nameListGame="Juegos Arcade" imgListGame={imgArcade}/>
-                    <ListGame nameListGame="Juegos De Mesa" imgListGame={imgDd}/>
+
+                    <ListGame nameListGame="Duelo De Cartas" imgListGame={imgDuel} tipoList="duelos" />
+                    <ListGame nameListGame="Juegos Arcade" imgListGame={imgArcade} tipoList="clasicos" />
+                    <ListGame nameListGame="Juegos De Mesa" imgListGame={imgDd} tipoList="mesa" />
+
                 </div>
 
             </div>
-            <Footer/>
+            <Footer />
 
         </div>
     )

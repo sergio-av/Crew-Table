@@ -48,11 +48,18 @@
     align-items: center;
     flex-direction: row !important;
 
-    padding-left: 17%;
-    margin-right: 17%;
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+
     margin-top: 10px;
 
     width: 1365px;
+}
+
+#bodyList  a{ 
+    height: 50px;
+    color: #000000;
+    text-decoration: none;
 }
 #endHr{
     margin-top: 25px;

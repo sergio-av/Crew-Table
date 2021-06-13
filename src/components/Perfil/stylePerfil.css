@@ -107,3 +107,19 @@ form {
     margin-right: 10px;
     margin-bottom: 50px;
 }
+#buttonDeleteEvent{
+  width: 171px;
+  height: 57px;
+
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+  margin-left: 37%;
+  background-color: #2A1A1F;
+  color: #AD8350;
+}
