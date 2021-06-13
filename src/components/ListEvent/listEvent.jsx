@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ListGame from '../common/ListGame/ListGame';
 import Poster from '../common/Poster/poster';
 import Topbar from '../common/TopBar/topbar';
@@ -12,8 +12,6 @@ import Footer from '../common/Footer/Footer';
 import { Link } from 'react-router-dom';
 
 const ListEvent = () => {
-
-    const [tipoList, setTipoList] = useState();
 
     return (
         <div>

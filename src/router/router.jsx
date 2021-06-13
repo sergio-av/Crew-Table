@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 import Home from '../components/Home/home';
 import ListEvent from '../components/ListEvent/listEvent';
@@ -22,11 +22,11 @@ const Router = () => {
     if (isLoggedIn) return (
         <BrowserRouter>
             <Route exact path='/' component={Home}  />
+            <Route path='/inicio' component={Home}  />
             <Route path='/eventos' component={ListEvent} />
             <Route path='/perfil' component={Perfil} />
             <Route path='/addevent' component={AddEvent} />
             <Route path='/event/:id' component={Event} />
-            <Redirect to='/' />
         </BrowserRouter>
     )
     return (

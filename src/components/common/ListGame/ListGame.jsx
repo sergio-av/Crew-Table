@@ -19,10 +19,9 @@ const ListGame = (props) => {
                 Object.assign(eventos[id].evento, {id: id});
                 arrayEventos.push(eventos[id].evento); 
             }
-            console.log(`arrayEventos`, arrayEventos)
-            const duelos = (arrayEventos||[]).filter(even => even.categoria == 'duelo');
-            const arcade = (arrayEventos||[]).filter(even => even.categoria == 'clasico');
-            const mesa = (arrayEventos||[]).filter(even => even.categoria == 'mesa');
+            const duelos = (arrayEventos||[]).filter(even => even.categoria === 'duelo');
+            const arcade = (arrayEventos||[]).filter(even => even.categoria === 'clasico');
+            const mesa = (arrayEventos||[]).filter(even => even.categoria === 'mesa');
 
             setListaArcade(arcade);
             setListaDuelos(duelos);
@@ -52,22 +51,22 @@ const ListGame = (props) => {
                             <hr id="hrEtiquetas" />
                             <Link to="/event">
                                 <div id="componente">
-                                    {listaDuelos && props.tipoList == 'duelos' && listaDuelos.map((duelo) => (
+                                    {listaDuelos && props.tipoList === 'duelos' && listaDuelos.map((duelo) => (
                                         <Link to={`/event/${duelo.id}`} id="listaduelos">
-                                            {console.log(`datos.evento.titulo`, duelo.titulo)}
                                             <h4>{duelo.titulo}</h4>
+                                            <h4>{duelo.fecha}</h4>
                                         </Link>
                                     ))}
-                                    {listaarcade && props.tipoList == 'clasicos' && listaarcade.map((arcade) => (
+                                    {listaarcade && props.tipoList === 'clasicos' && listaarcade.map((arcade) => (
                                         <Link to={`/event/${arcade.id}`} id="listaarcade">
-                                            {console.log(`datos.evento.titulo`, arcade.titulo)}
                                             <h4>{arcade.titulo}</h4>
+                                            <h4>{arcade.fecha}</h4>
                                         </Link>
                                     ))}
-                                    {listaMesa && props.tipoList == 'mesa' && listaMesa.map((mesa) => (
+                                    {listaMesa && props.tipoList === 'mesa' && listaMesa.map((mesa) => (
                                         <Link to={`/event/${mesa.id}`} id="listamesas">
-                                            {console.log(`datos.evento.titulo`, mesa.titulo)}
                                             <h4>{mesa.titulo}</h4>
+                                            <h4>{mesa.fecha}</h4>
                                         </Link>
                                     ))}
                                 </div>

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import logoRegister from '../../img/logoRegister.svg'
 import firebase from 'firebase';
-import db from '../../utils/firebasejeConfig';
 
 const Register = () => {
 
@@ -20,7 +19,6 @@ const Register = () => {
             .then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
-                console.log(`user`, user);
                 createUser(user.uid);
 
             })

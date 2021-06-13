@@ -1,4 +1,4 @@
-import React , {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../common/Footer/Footer'
 
 import Topbar from '../common/TopBar/topbar'
@@ -6,12 +6,12 @@ import firebase from 'firebase';
 import imgArcade from '../../img/imgArcade.svg'
 import imgDd from '../../img/imgDd.svg'
 import imgDuel from '../../img/imgDuel.svg'
-import {useParams} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import './styleEvent.css'
 
 const Event = () => {
 
-    const {id} = useParams();
+    const { id } = useParams();
 
     const [currentEvent, setCurrentEvent] = useState();
 
@@ -21,22 +21,28 @@ const Event = () => {
         eventosRef.on('value', (snapshot) => {
             const eventos = snapshot.val();
             for (let idDataFb in eventos) {
-                if (idDataFb == id) {
+                if (idDataFb === id) {
                     setCurrentEvent(eventos[id].evento)
                 }
             }
-            
+
         });
-
     }, []);
-
 
     return (
         <div>
             <Topbar />
             <div id="bodyEvent">
                 <div id="cabeceraEvent">
-                    <img src={imgDd} alt="" />
+                    {currentEvent?.categoria === 'duelo' &&
+                        <img src={imgDuel} alt="cabeceraDuelo" />
+                    }
+                    {currentEvent?.categoria === 'mesa' &&
+                        <img src={imgDd} alt="cabeceraMesa" />
+                    }
+                    {currentEvent?.categoria === 'clasico' &&
+                        <img src={imgArcade} alt="cabeceraArcade" />
+                    }
                 </div>
 
                 <div id="data">
@@ -53,6 +59,7 @@ const Event = () => {
                                 <div>
                                     <h4>Descripción</h4>
                                     <hr />
+                                    <p>{currentEvent?.descripcion}</p>
                                 </div>
                                 <p id="componentDescription"></p>
                             </div>
@@ -61,7 +68,7 @@ const Event = () => {
                                 <div className="dataEvent">
                                     <div>
                                         <p>Ubicacion:</p>
-                                        <p className="valor">dato relleno</p>
+                                        <p className="valor">{currentEvent?.Ubicacion}</p>
                                     </div>
                                     <hr />
                                 </div>
@@ -72,26 +79,26 @@ const Event = () => {
                             <div className="dataEvent">
                                 <div>
                                     <p>Horario:</p>
-                                    <p className="valor">18:00</p>
+                                    <p className="valor">{currentEvent?.hora}</p>
                                 </div>
                                 <hr />
                             </div>
                             <div className="dataEvent">
                                 <div>
                                     <p>Fecha:</p>
-                                    <p className="valor">25/8/9</p>
+                                    <p className="valor">{currentEvent?.fecha}</p>
                                 </div>
                                 <hr />
                             </div>
                             <div className="dataEvent">
                                 <div>
                                     <p>Personas Apuntadas:</p>
-                                    <p className="valor">25/100</p>
+                                    <p className="valor">{currentEvent?.numPersonas}</p>
                                 </div>
                                 <hr />
                             </div>
 
-                            <button id="buttonEvent"> Unirme al Evento </button>
+                            <button id="buttonEvent"><del>Unirme al Evento</del> </button>
                         </div>
                     </div>
                 </div>

@@ -28,15 +28,13 @@ const Perfil = () => {
         })
     }
 
-    console.log(`user`, user)
-
     useEffect(() => {
         const usuariosRef = firebase.database().ref('Usuarios');
 
         usuariosRef.on('value', (snapshot) => {
             const usuarios = snapshot.val();
             for (let idDataFb in usuarios) {
-                if (usuarios[idDataFb].id == user.uid) {
+                if (usuarios[idDataFb].id === user.uid) {
                     setCurrentUser(usuarios[idDataFb])
                     setDatos({
                         nombre: usuarios[idDataFb].nombre,
@@ -55,7 +53,7 @@ const Perfil = () => {
         usuariosRef.on('value', (snapshot) => {
             const usuarios = snapshot.val();
             for (let idDataFb in usuarios) {
-                if (usuarios[idDataFb].id == user.uid) {
+                if (usuarios[idDataFb].id === user.uid) {
                     const usuariosUpdateRef = firebase.database().ref('Usuarios').child(idDataFb);
                     usuariosUpdateRef.update(datos);
                 }
@@ -64,7 +62,6 @@ const Perfil = () => {
 
     }
 
-    //dato.data.usuario.email
     return (
         <div>
             <Topbar />
@@ -77,23 +74,14 @@ const Perfil = () => {
                             <div className="inputs">
                                 <div className="inputPerfil">
                                     <p>Nombre:</p>
-
-
                                     <input type="text" name='nombre' value={datos?.nombre} onChange={handleInputChange} />
-
-
                                 </div>
                                 <hr className="hrInputPerfil" />
                             </div>
                             <div className="inputs">
                                 <div className="inputPerfil">
                                     <p>Usuario:</p>
-
-
-
                                     <input type="text" name='apodo' value={datos?.apodo} onChange={handleInputChange} />
-
-
                                 </div>
                                 <hr className="hrInputPerfil" />
                             </div>
@@ -119,7 +107,7 @@ const Perfil = () => {
                     <p>Componenete evento</p>
 
                     <hr />
-                    <button id="buttonDeleteEvent">Eliminar Evento</button>
+                    <button id="buttonDeleteEvent"><del>Eliminar Evento</del></button>
                 </div>
             </div>
             <Footer />
