@@ -4,17 +4,17 @@
   align-items: center;
   margin-bottom: 100px;
 }
-#poster{
-    margin-left: 45px;   
+#poster {
+  margin-left: 45px;
 }
-#titulo{
+#titulo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-form {
+#formPerfil {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@ form {
   border-color: #764134;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-form div{
+form div {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
@@ -64,7 +64,7 @@ form div{
 }
 .inputPerfil input {
   width: 567px;
-  background-color:transparent;
+  background-color: transparent;
   outline: none;
   border: none;
   margin-top: 15px;
@@ -92,8 +92,8 @@ form div{
   border-radius: 50px;
   cursor: pointer;
 
-  background-color: #2A1A1F;
-  color: #AD8350;
+  background-color: #2a1a1f;
+  color: #ad8350;
 }
 
 #misEvents {
@@ -102,38 +102,38 @@ form div{
 
   width: 609px;
   height: 695px;
-  
+
   background-image: url("../../img/textura_papelPerfill.svg");
   border-radius: 59px;
   border: 1px solid;
   border-color: #764134;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-#titleMisEvents{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#titleMisEvents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#titleE{
-    margin-top: 25px;
-    text-align: center;
-    width: 90%;
+#titleE {
+  margin-top: 25px;
+  text-align: center;
+  width: 90%;
 }
-#etiquetasP{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#etiquetasP {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#etiquetasP p{
-    font-size: large;
-    font-weight: 500;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
+#etiquetasP p {
+  font-size: large;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
 }
-#buttonDeleteEvent{
+#buttonDeleteEvent {
   width: 171px;
   height: 57px;
 
@@ -144,8 +144,8 @@ form div{
 
   margin-top: 15px;
   margin-bottom: 15px;
-  
+
   margin-left: 37%;
-  background-color: #2A1A1F;
-  color: #AD8350;
+  background-color: #2a1a1f;
+  color: #ad8350;
 }

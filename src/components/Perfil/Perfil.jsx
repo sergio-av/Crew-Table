@@ -71,7 +71,7 @@ const Perfil = () => {
             <Poster name="Tu Perfil" id="poster" className="posterPerfil" />
             <div id="bodyPerfil">
                 <div id="formComplete">
-                    <form onSubmit={handleUpdate}>
+                    <form id="formPerfil" onSubmit={handleUpdate}>
                         <div id="titulo">
                             <h3>Tus Datos</h3>
                             <p>{user.email}</p>
