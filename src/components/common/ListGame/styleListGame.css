@@ -1,0 +1,78 @@
+#bodyListGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+#bodyList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 1365px;
+  height: 815px;
+
+  background-image: url("../../../img/textura_papel.png");
+}
+#bodyList div{
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 13%;
+}
+#etiquetas{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: row !important;
+
+    padding-left: 17%;
+    margin-right: 17%;
+    width: 1365px;
+    margin-bottom: 0px !important;
+}
+#hrEtiquetas{
+    margin-top: 0px;
+    border: 1px solid #000000;
+    width: 85%;
+}
+#componente{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column!important;
+
+    
+
+    margin-top: 10px;
+
+    width: 1365px;
+}
+.eventos{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: row !important;
+    padding-right: 9%;
+    padding-left: 9%;
+
+    width: 1365px;
+    
+}
+#bodyList  a{ 
+    height: 50px;
+    color: #000000;
+    text-decoration: none;
+}
+#endHr{
+    margin-top: 25px;
+    margin-bottom: 55px;
+    border: 1px solid #000000;
+    width: 100%;
+}

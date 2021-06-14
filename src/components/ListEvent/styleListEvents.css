@@ -1,0 +1,51 @@
+.hrlistEvent {
+  width: 1369px;
+  height: 1px;
+
+  border: 1px solid #000000;
+}
+
+#bodyListEvent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #afa060;
+}
+#buttonAdEvent {
+  margin-top: 20px;
+  margin-bottom: 87px;
+
+  width: 1364.03px;
+  height: 403.58px;
+
+  border-radius: 38px;
+
+  background-image: url("../../img/publicEvent.svg");
+  filter: drop-shadow(2px 6px 6px rgba(0, 0, 0, 0.5));
+}
+#sombra {
+  width: 1364.03px;
+  height: 403.58px;
+}
+#sombra h2 {
+  display: none;
+}
+#buttonAdEvent:hover {
+  cursor: pointer;
+}
+#buttonAdEvent div:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1364.03px;
+  height: 403.58px;
+
+  background: rgba(118, 65, 52, 0.5);
+  border-radius: 38px;
+}
+#sombra:hover > h2 {
+  display: inline;
+}

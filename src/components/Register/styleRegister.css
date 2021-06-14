@@ -1,0 +1,138 @@
+label{
+    font-size: larger
+}
+.hrRegister{
+    border-color: #2A1A1F;
+}
+
+
+#body{
+    background-image: url(../../img/background.svg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#contentRegister{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 128px;
+    margin-bottom: 208px;
+
+    width: 1024px;
+    height: 768px;
+
+    background-color: #AD8350;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+}
+#contentRegister img{
+    margin-top: 39px;
+}
+
+#titleRegister{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 720px;
+
+    margin-right: 320px;
+}
+
+.inputsRegister{
+    width: 728px;
+    height: 47px;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    
+}
+#contentRegister input{
+    border: none;
+    outline: none;
+    font-size: large;
+
+
+    color: #2A1A1F;
+    background-color: #AD8350 ;
+}
+
+#contentRegister button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+
+    font-size: large;
+
+    width: 171px;
+    height: 57px;
+
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    background-color: #2A1A1F;
+    color: #AD8350;
+}
+
+#contentRegister p{
+    font-size: large;
+
+    margin-bottom: 35px;
+}
+.enlaceRegister{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+
+    margin-top: 15px;
+    margin-bottom: 35px;
+    
+}
+
+@media only screen and (max-width: 375px){
+    #contentRegister{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        margin-top: 250px !important;
+
+        width: 330px;
+
+    
+    }
+    .inputsRegister{
+        width: 80%;
+        height: 15%;
+        
+    }
+    #titleRegister{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 95%;
+        margin-bottom: 10%;
+    }
+    
+}

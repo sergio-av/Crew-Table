@@ -1,0 +1,151 @@
+#bodyPerfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#poster {
+  margin-left: 45px;
+}
+#titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#formPerfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 350px;
+  width: 610px;
+  height: 420px;
+
+  background-image: url("../../img/textura_papelPerfill.svg");
+  border-radius: 59px;
+  border: 1px solid;
+  border-color: #764134;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+form div {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#formComplete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputs hr {
+  width: 100%;
+  margin-top: 0px;
+}
+.inputPerfil {
+  width: 567px;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+.inputPerfil input {
+  width: 567px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+.inputPerfil p {
+  font-weight: 500;
+  font-size: large;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+#buttonForm > button {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+
+  font-size: large;
+
+  width: 171px;
+  height: 57px;
+
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  background-color: #2a1a1f;
+  color: #ad8350;
+}
+
+#misEvents {
+  margin-bottom: 25px;
+  margin-right: 100px;
+
+  width: 609px;
+  height: 695px;
+
+  background-image: url("../../img/textura_papelPerfill.svg");
+  border-radius: 59px;
+  border: 1px solid;
+  border-color: #764134;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#titleMisEvents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#titleE {
+  margin-top: 25px;
+  text-align: center;
+  width: 90%;
+}
+#etiquetasP {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#etiquetasP p {
+  font-size: large;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+#buttonDeleteEvent {
+  width: 171px;
+  height: 57px;
+
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  margin-left: 37%;
+  background-color: #2a1a1f;
+  color: #ad8350;
+}

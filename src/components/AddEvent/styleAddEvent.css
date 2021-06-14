@@ -1,0 +1,142 @@
+#formEvent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-left: 30%;
+
+  width: 777px;
+  height: 880px;
+
+  margin-top: 35px;
+  margin-bottom: 50px;
+
+  background-image: url("../../img/textura_formE.svg");
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#formEvent p{
+    font-size: large;
+    font-weight: 500;
+}
+#titleInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 694px;
+
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#titleInput input {
+  text-align: center;
+
+  font-size: large;
+  margin-top: 15px;
+
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+#titleInput hr {
+  margin-top: 0px;
+  width: 100%;
+}
+
+.inputdata {
+  width: 694px;
+}
+.inputdata div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 600px;
+    margin-right: 58%;
+}
+.inputdata div input {
+    width: 600px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.inputdata hr {
+  margin-top: 0px;
+  width: 100%;
+}
+.inputdata p {
+  margin-right: 15px;
+  margin-bottom: 0px;
+}
+#textDate {
+  padding-right: 25px;
+}
+
+#categoriAddEvent {
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 25px;
+}
+.titlesAdd {
+  text-align: center;
+}
+.titlesAdd hr {
+  margin-top: 0px;
+}
+#checkBoxAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+#checkBoxAdd > div {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.checkAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+}
+.checkAdd p {
+  margin-bottom: 10px;
+}
+
+#textAeraAdd {
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+#inputNumber{
+    margin-right: 50%;
+    width: 100px;
+}
+#buttonAddE{
+    font-size: large;
+
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+    width: 171px;
+    height: 57px;
+
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    background-color: #2A1A1F;
+    color: #AD8350;
+
+}
