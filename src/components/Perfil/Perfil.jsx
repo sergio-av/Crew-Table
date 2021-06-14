@@ -30,7 +30,7 @@ const Perfil = () => {
 
     useEffect(() => {
         const usuariosRef = firebase.database().ref('Usuarios');
-
+        console.log(`currentUser`, currentUser)
         usuariosRef.on('value', (snapshot) => {
             const usuarios = snapshot.val();
             for (let idDataFb in usuarios) {
