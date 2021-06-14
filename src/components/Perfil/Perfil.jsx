@@ -44,8 +44,8 @@ const Perfil = () => {
             }
 
         });
-
-    }, [user]);
+        
+    }, []);
 
     const handleUpdate = (event) => {
         event.preventDefault()

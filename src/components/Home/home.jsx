@@ -60,7 +60,7 @@ const Home = () => {
                                         {game.name}
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Precio: {game.price}€    <a href={game.url}> mas info </a>
+                                        Precio: {game.price}€    <a target="_blank" href={game.url}> mas info </a>
                                     </Typography>
 
                                 </CardContent>
