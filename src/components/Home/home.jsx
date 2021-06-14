@@ -29,10 +29,10 @@ const Home = () => {
     const [boardGames, setBoardGames] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.boardgameatlas.com/api/search?client_id=JLBr5npPhV').
-            then(respuesta => respuesta.json()).
-            then(data => setBoardGames(data.games)).
-            catch(error => alert(`error`, error));
+        fetch('https://api.boardgameatlas.com/api/search?client_id=JLBr5npPhV')
+            .then(respuesta => respuesta.json())
+            .then(data => setBoardGames(data.games))
+            .catch(error => alert(`error`, error));
 
     }, [])
 
