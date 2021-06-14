@@ -30,7 +30,6 @@ const ListGame = (props) => {
         
     }, []);
 
-
     return (
         <div id="bodyListGame">
 
@@ -52,19 +51,19 @@ const ListGame = (props) => {
                             <Link to="/event">
                                 <div id="componente">
                                     {listaDuelos && props.tipoList === 'duelos' && listaDuelos.map((duelo) => (
-                                        <Link to={`/event/${duelo.id}`} id="listaduelos">
+                                        <Link className="eventos" to={`/event/${duelo.id}`} id="listaduelos">
                                             <h4>{duelo.titulo}</h4>
                                             <h4>{duelo.fecha}</h4>
                                         </Link>
                                     ))}
                                     {listaarcade && props.tipoList === 'clasicos' && listaarcade.map((arcade) => (
-                                        <Link to={`/event/${arcade.id}`} id="listaarcade">
+                                        <Link className="eventos" to={`/event/${arcade.id}`} id="listaarcade">
                                             <h4>{arcade.titulo}</h4>
                                             <h4>{arcade.fecha}</h4>
                                         </Link>
                                     ))}
                                     {listaMesa && props.tipoList === 'mesa' && listaMesa.map((mesa) => (
-                                        <Link to={`/event/${mesa.id}`} id="listamesas">
+                                        <Link className="eventos" to={`/event/${mesa.id}`} id="listamesas">
                                             <h4>{mesa.titulo}</h4>
                                             <h4>{mesa.fecha}</h4>
                                         </Link>

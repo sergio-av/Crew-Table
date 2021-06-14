@@ -55,7 +55,15 @@
 
     width: 1365px;
 }
-
+.eventos{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: row !important;
+    
+    width: 1365px;
+    
+}
 #bodyList  a{ 
     height: 50px;
     color: #000000;
