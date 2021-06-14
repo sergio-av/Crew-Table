@@ -46,10 +46,9 @@
     display: flex;
     justify-content: space-between !important;
     align-items: center;
-    flex-direction: row !important;
+    flex-direction: column!important;
 
-    padding-left: 8.5%;
-    padding-right: 8.5%;
+    
 
     margin-top: 10px;
 
@@ -60,7 +59,9 @@
     justify-content: space-between !important;
     align-items: center;
     flex-direction: row !important;
-    
+    padding-right: 9%;
+    padding-left: 9%;
+
     width: 1365px;
     
 }

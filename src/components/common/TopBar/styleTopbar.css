@@ -28,3 +28,8 @@ width: 300px !important;
     margin-right: 40px;
     margin-left: 5px;  
 }
+
+#exit{
+  cursor: pointer;
+}
+

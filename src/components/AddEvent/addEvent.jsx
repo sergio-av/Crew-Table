@@ -91,15 +91,15 @@ const AddEvent = () => {
                     <div id="checkBoxAdd">
                         <div className="checkAdd">
                             <p>Duelos de cartas</p>
-                            <input type="checkbox" value="duelo" onChange={(ev) => setCategoria(ev.target.value)} />
+                            <input type="radio" value="duelo" name="categoria" onChange={(ev) => setCategoria(ev.target.value)} />
                         </div>
                         <div className="checkAdd">
                             <p>Juegos de mesa</p>
-                            <input type="checkbox" value="mesa" onChange={(ev) => setCategoria(ev.target.value)} />
+                            <input type="radio" value="mesa" name="categoria" onChange={(ev) => setCategoria(ev.target.value)} />
                         </div>
                         <div className="checkAdd">
                             <p>Juegos Clásicos</p>
-                            <input type="checkbox" value="clasico" onChange={(ev) => setCategoria(ev.target.value)} />
+                            <input type="radio" name="categoria" value="clasico" onChange={(ev) => setCategoria(ev.target.value)} />
                         </div>
                     </div>
                 </div>

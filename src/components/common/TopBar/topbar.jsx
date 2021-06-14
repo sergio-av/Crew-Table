@@ -38,7 +38,7 @@ const Topbar = () => {
                             <div>
                                 {!user ?
                                     <Link to="/login" className="enlace">Login</Link>
-                                    : <img src={iconExit} alt="exit" onClick={logout} />}
+                                    : <img id="exit" src={iconExit} alt="exit" onClick={logout} />}
                             </div>
                         </div>
                     </div>
