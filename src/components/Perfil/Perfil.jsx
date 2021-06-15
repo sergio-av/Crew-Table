@@ -56,7 +56,7 @@ const Perfil = () => {
                 if (usuarios[idDataFb].id === user.uid) {
                     const usuariosUpdateRef = firebase.database().ref('Usuarios').child(idDataFb);
                     usuariosUpdateRef.update(datos)
-                    history.go(0)
+                    history.push('/perfil')
                 }
             }
         });
