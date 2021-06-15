@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styleRegister.css';
 import { Link } from 'react-router-dom';
-
+import { useHistory } from 'react-router'
 import logoRegister from '../../img/logoRegister.svg'
 import firebase from 'firebase';
 
@@ -9,24 +9,28 @@ const Register = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [name, setName] = useState();
-    const [apodo, setApodo] = useState();
-
+    const [name, setName] = useState('');
+    const [apodo, setApodo] = useState('');
+    const history = useHistory()
     
 
     const registerUser = async () => {
-        await firebase.auth().createUserWithEmailAndPassword(email, password)
+        if (name !== '' && apodo !== '') {
+            await firebase.auth().createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
+                history.push('/inicio')
                 createUser(user.uid);
-
             })
             .catch((error) => {
                 const errorMessage = error.message;
                 alert(errorMessage);
                 alert('Recuerde que la contraseña debe tener minimo 6 digitos')
             });
+        }else{
+            alert('Recuerde de completar todos los campos')
+        }
     }
 
 
@@ -77,7 +81,7 @@ const Register = () => {
                         <div className="inputsRegister">
                             <div>
                                 <label htmlFor="userPass">Gmail:</label>
-                                <input type="gmail" id="gmail" name="gmail" onChange={(ev) => setEmail(ev.target.value)}/>
+                                <input type="gmail" id="gmail" name="gmail" autoComplete="off" onChange={(ev) => setEmail(ev.target.value)}/>
                             </div>
                             <hr className="hrRegister"/>
                         </div>
