@@ -9,6 +9,7 @@ import 'firebase/auth';
 import firebase from 'firebase';
 
 
+
 const Perfil = () => {
 
     const [currentUser, setCurrentUser] = useState();
@@ -56,7 +57,7 @@ const Perfil = () => {
                 if (usuarios[idDataFb].id === user.uid) {
                     const usuariosUpdateRef = firebase.database().ref('Usuarios').child(idDataFb);
                     usuariosUpdateRef.update(datos)
-                    history.go(0)
+                    
                 }
             }
         });
